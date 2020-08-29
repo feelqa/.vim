@@ -1,7 +1,7 @@
 execute pathogen#infect()
 filetype indent on
 syntax on
-colorscheme darkblue
+colorscheme evening
 
 set nu                          "number - print line num infront each line
 set nowrap                      "long lines don't continue on next line
@@ -19,10 +19,12 @@ set ru                          "ruler - show cursor line and column in the stat
 set bg=dark                     "background
 set mouse=a                     "enable mouse support
 
-set spell                       "spellchecking - default eng
+"set spell                       "spellchecking - default eng
 
 set tags=~/.vim/tags            "ctags
 
 set wildignore+=*.o             "ctrlP - ignore .o files
 let g:ctrlp_map = '<c-p>'       "ctrlP - default command to start it
 let g:ctrlp_cmd = 'CtrlP :pwd'  "ctrlP - open current dir on start
+set list
+set listchars=trail:*
